@@ -1,5 +1,5 @@
 # my-snippets
-Random stuff that I never remember, but need to use from time to time.
+Random stuff that I've made in the past... that when I need to use again, I never remember.
 
 ## Shell
 
