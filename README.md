@@ -25,6 +25,8 @@ Locate files that are currently in use that contain a certain name.
 
 To force NPM to install all its crap in a user defined dir:
 
+Go to `~`, open `.zshrc` or `.zprofile` and add the following: 
+
 `npm config set prefix '~/.npm-global'`
 
 And then add the *bin* dir to the *PATH*:
