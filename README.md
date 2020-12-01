@@ -29,12 +29,18 @@ Go to `~`, open `.zshrc` or `.zprofile` and add the following:
 
 `npm config set prefix '~/.npm-global'`
 
-And then add the *bin* dir to the *PATH*:
+And then add *npm*'s *bin* dir to the *PATH*:
 
 `export PATH=$PATH:/Users/CArantesK/.npm-global/bin`
 
+To install new stuff via *npm*, use: `npm install -g electron@latest`. The `-g` makes *npm* install the dependencies in: `~/.npm-global`.
+
 Additional *exports*:
 
-`export DOTNET_ROOT=` point to the directory that contains the dotnet app.
-
-`export JAVA_HOME=` point to the directory .../Contents/Home of the JDK that is being used.
+```shell
+export PATH=$PATH:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
+export PATH=$PATH:/Users/admin/Dev/Env/dotnet-sdk-5.0.100-osx-x64
+export PATH=$PATH:/Users/admin/Dev/Env/openjdk-15.0.1.jdk/Contents/Home/bin
+export DOTNET_ROOT=` point to the directory that contains the dotnet app.
+export JAVA_HOME=` point to the directory .../Contents/Home of the JDK that is being used.
+````
