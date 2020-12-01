@@ -11,7 +11,7 @@ find "/Users/CArantesK/development/shell-stuff" -type f -name "*.sh" -exec mv -v
 
 ### Useful when the Trash in macOS starts doing weird sh*t with deleted files
 
-Locate files that are locked. First, do a `cd` and position yourself in the dir that you wish to check.
+Locate files that are locked and then change their flags. First, do a `cd` and position yourself in the dir that you wish to check.
 
 ```shell
 cd "/Volumes/Seagate Backup Plus Drive/.Trashes/501/something/something"
@@ -51,4 +51,11 @@ export PATH=$PATH:/Users/CArantesK/Dev/Env/dotnet-sdk-5.0.100-osx-x64
 export PATH=$PATH:/Users/CArantesK/Dev/Env/openjdk-15.0.1.jdk/Contents/Home/bin
 export DOTNET_ROOT= #point to the directory that contains the dotnet app.
 export JAVA_HOME= #point to the directory .../Contents/Home of the JDK that is being used.
-````
+```
+
+*Visual Studio* requires a *symlink* to be created. That'll let VS run/debug projects. This needs to be performed manually only when VS is installed without *.net Core*. To create the *symlink*:
+
+```shell
+cd /usr/local/bin
+ln -sfn /Users/CArantesK/Dev/Env/dotnet-sdk-5.0.100-osx-x64/dotnet dotnet
+```
