@@ -49,6 +49,11 @@ Additional *exports*:
 export PATH=$PATH:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
 export PATH=$PATH:/Users/CArantesK/Dev/Env/dotnet-sdk-5.0.100-osx-x64
 export PATH=$PATH:/Users/CArantesK/Dev/Env/openjdk-15.0.1.jdk/Contents/Home/bin
+```
+
+Set defined vars:
+
+```shell
 export DOTNET_ROOT= #point to the directory that contains the dotnet app.
 export JAVA_HOME= #point to the directory .../Contents/Home of the JDK that is being used.
 ```
