@@ -27,6 +27,8 @@ lsof | grep -i "something"
 
 ## New Mac config for dev env
 
+### Export stuff for .net Core, Java and NPM
+
 To force NPM to install all its crap in a user defined dir:
 
 Go to `~`, open `.zshrc` or `.zprofile` and add the following: 
@@ -57,6 +59,8 @@ Set defined vars:
 export DOTNET_ROOT= #point to the directory that contains the dotnet app.
 export JAVA_HOME= #point to the directory .../Contents/Home of the JDK that is being used.
 ```
+
+### VS
 
 *Visual Studio* requires a *symlink* to be created. That'll let VS run/debug projects. This needs to be performed manually only when VS is installed without *.net Core*. To create the *symlink*:
 
