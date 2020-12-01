@@ -68,3 +68,6 @@ export JAVA_HOME= #point to the directory .../Contents/Home of the JDK that is b
 cd /usr/local/bin
 ln -sfn /Users/CArantesK/Dev/Env/dotnet-sdk-5.0.100-osx-x64/dotnet dotnet
 ```
+
+# Random links
+* [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
