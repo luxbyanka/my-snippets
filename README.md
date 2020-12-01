@@ -5,21 +5,25 @@ Random stuff that I've made in the past... that when I need to use again, I neve
 
 Move all the files with a certain ext from one dir to another dir. All the files will lose their og dir structure and will be 'flattened' at the destiny dir.
 
-`find "/Users/CArantesK/development/shell-stuff" -type f -name "*.sh" -exec mv -v {} "/Volumes/Seagate Backup Plus Drive/development/shell-stuff" \;`
+```shell
+find "/Users/CArantesK/development/shell-stuff" -type f -name "*.sh" -exec mv -v {} "/Volumes/Seagate Backup Plus Drive/development/shell-stuff" \;
+```
 
 ### Useful when the Trash in macOS starts doing weird sh*t with deleted files
 
 Locate files that are locked. First, do a `cd` and position yourself in the dir that you wish to check.
 
-`cd "/Volumes/Seagate Backup Plus Drive/.Trashes/501/something/something"`
-
-`find . -flags uchg`
-
-`find . -flags uchg -exec chflags nouchg {} \;`
+```shell
+cd "/Volumes/Seagate Backup Plus Drive/.Trashes/501/something/something"
+find . -flags uchg
+find . -flags uchg -exec chflags nouchg {} \;
+```
 
 Locate files that are currently in use that contain a certain name.
 
-`lsof | grep -i "something"`
+```shell
+lsof | grep -i "something"
+```
 
 ## New Mac config for dev env
 
@@ -27,11 +31,15 @@ To force NPM to install all its crap in a user defined dir:
 
 Go to `~`, open `.zshrc` or `.zprofile` and add the following: 
 
-`npm config set prefix '~/.npm-global'`
+```shell
+npm config set prefix '~/.npm-global'
+```
 
 And then add *npm*'s *bin* dir to the *PATH*:
 
-`export PATH=$PATH:/Users/CArantesK/.npm-global/bin`
+```shell
+export PATH=$PATH:/Users/CArantesK/.npm-global/bin
+```
 
 To install new stuff via *npm*, use: `npm install -g electron@latest`. The `-g` makes *npm* install the dependencies in: `~/.npm-global`.
 
