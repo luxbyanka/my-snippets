@@ -8,7 +8,15 @@ Move all the files with a certain ext from one dir to another dir. All the files
 > **IMPORTANT** The dir that is used as destiny MUST exist before executing this!!!
 
 ```shell
-find "/Users/CArantesK/development/shell-stuff" -type f -name "*.sh" -exec mv -v {} "/Volumes/Seagate Backup Plus Drive/development/shell-stuff" \;
+#Copy *.mp4 files from one dir to another.
+find "~/VirtualBox VMs/Shared" -type f -name "*.mp4" -exec mv -v {} "/Volumes/Elements/backup" \;
+
+#Delete .DS_Store, *.nfo, *.exe and *.txt files.
+find "~/VirtualBox VMs/Shared" -type f  \( -name ".DS_Store" -o -name "*.nfo" -o -name "*.exe" -o -name "*.txt" \) -exec rm -v {} \;
+
+#Delete empty dirs.
+find "~/VirtualBox VMs/Shared" -type d -empty -delete
+
 ```
 
 ### Useful when the Trash in macOS starts doing weird sh*t with deleted files
@@ -31,9 +39,9 @@ lsof | grep -i "something"
 
 ### Export stuff for .net Core, Java and NPM
 
-To force NPM to install all its crap in a user defined dir:
+To force *npm* to install all its crap in a user defined dir:
 
-Go to `~`, open `.zshrc` or `.zprofile` and add the following: 
+Go to `~`, open `.zshrc` or `.zprofile` file using a text editor and add the following lines:
 
 ```shell
 npm config set prefix '~/.npm-global'
@@ -42,7 +50,7 @@ npm config set prefix '~/.npm-global'
 And then add *npm*'s *bin* dir to the *PATH*:
 
 ```shell
-export PATH=$PATH:/Users/CArantesK/.npm-global/bin
+export PATH=$PATH:~/.npm-global/bin
 ```
 
 To install new stuff via *npm*, use: `npm install -g electron@latest`. The `-g` makes *npm* install the dependencies in: `~/.npm-global`.
@@ -60,6 +68,12 @@ Set defined vars:
 ```shell
 export DOTNET_ROOT= #point to the directory that contains the dotnet app.
 export JAVA_HOME= #point to the directory .../Contents/Home of the JDK that is being used.
+```
+
+Set alias:
+
+```shell
+alias vlc='/Applications/VLC.app/Contents/MacOS/VLC' #This lets you call 'vlc Tenet.2020.IMAX.1080p.BluRay.x264.DTS-FGT.mkv --no-audio' from the command line.
 ```
 
 ### VS
