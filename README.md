@@ -32,7 +32,7 @@ find . -flags uchg -exec chflags nouchg {} \;
 Locate files that are currently in use that contain a certain name.
 
 ```shell
-lsof | grep -i "something"
+lsof | grep -i "a-certain-name"
 ```
 
 ## New Mac config for dev env
