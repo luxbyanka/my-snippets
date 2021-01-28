@@ -92,6 +92,13 @@ dotnet dev-certs https --trust
 
 > If the message `"Unable to attach to CoreCLR. Unknown Error: 0x80131c3c"`shows up and you are in macOS Big Sur, check: [Debugging not working with XCode 12 selected #42311](https://github.com/dotnet/runtime/issues/42311).
 
+# Git
+
+```shell
+git config user.email "cro-marmot@outlook.com"
+git config user.name "Celeste Arantes"
+```
+
 # Random links
 
 * [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
