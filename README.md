@@ -40,7 +40,7 @@ lsof | grep -i "a-certain-name"
 
 ### Using the dotnet core binaries
 
-To run `dotnet` from the Terminal and avoid getting the error message **"dotnet" can't be opened because Apple cannot check it for malicious software**, you can run `sudo spctl --master-disable`. This will enable a new option at _System preferences_ > _Security & Privacy_ > _General_ > _Allow apps downloaded from:_ > _Anywhere_. This will let all unsigned programs to run.
+To run `dotnet` from the Terminal and avoid getting the error message **"dotnet" can't be opened because Apple cannot check it for malicious software**, you can run `sudo spctl --master-disable`. This will enable a new option at **System preferences** > **Security & Privacy** > **General** > **Allow apps downloaded from:** > **Anywhere**. This will let all unsigned programs to run.
 
 ### Export stuff for .net Core, Java and NPM
 
