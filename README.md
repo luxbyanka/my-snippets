@@ -37,6 +37,11 @@ lsof | grep -i "a-certain-name"
 
 ## New Mac config for dev env
 
+
+### Using the dotnet core binaries
+
+To run the `dotnet` executable and avoid getting the error message _"dotnet" can't be opened because Apple cannot check it for malicious software_ it's necessary to run `sudo spctl --master-disable`. This will enable a new option at _System preferences_ > _Security & Privacy_ > _General_ > _Allow apps downloaded from:_.
+
 ### Export stuff for .net Core, Java and NPM
 
 To force *npm* to install all its crap in a user defined dir:
