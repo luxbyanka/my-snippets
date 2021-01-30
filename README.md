@@ -40,6 +40,8 @@ lsof | grep -i "a-certain-name"
 
 ### Using the dotnet core binaries
 
+#### In macOS Catalina:
+
 To run `dotnet` from the Terminal and avoid getting the error message **"dotnet" can't be opened because Apple cannot check it for malicious software**, you can run `sudo spctl --master-disable`. This will disable **System Policy Control**. Now you can choose a new option at **System preferences** > **Security & Privacy** > **General** > **Allow apps downloaded from:** > **Anywhere**. This will let all unsigned programs to run. To enable **System Policy Control** again, run: `sudo spctl --master-enable`. To check **System Policy Control** current status, run: `sudo spctl --status`.
 
 ### Export stuff for .net Core, Java and NPM
