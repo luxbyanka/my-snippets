@@ -35,6 +35,13 @@ Locate files that are currently in use that contain a certain name.
 lsof | grep -i "a-certain-name"
 ```
 
+
+### VLC
+
+```shell
+vlc Mary-RedQueen-YE053-FullHD.mp4 --no-audio --zoom=0.3
+```
+
 ## New Mac config for dev env
 
 
