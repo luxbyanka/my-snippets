@@ -113,6 +113,12 @@ git config user.email "cro-marmot@outlook.com"
 git config user.name "Celeste Arantes"
 ```
 
+### ffmpeg
+```shell
+./ffmpeg -i tenet.mkv -map 0:s:0 subs-en.srt #Extract subs on track 1
+./ffmpeg -i tenet.mkv -map 0:s:1 subs-es.srt #Extract subs on track 2
+```
+
 # Random links
 
 * [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
