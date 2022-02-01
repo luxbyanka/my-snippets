@@ -119,6 +119,32 @@ git config user.name "Celeste Arantes"
 ./ffmpeg -i tenet.mkv -map 0:s:1 subs-es.srt #Extract subs on track 2
 ```
 
+# Visual Studio Code
+
+On **macOS**, press _shift_ + _command_ + _p_ to open the **Command Palette**.
+
+Type 'keyboard' and choose **Preferences: Open Keyboard Shortcuts (JSON)**.
+
+```json
+// To move between open tabs respecting the order in which they appear.
+[
+  {
+    "key": "shift+alt+right",
+    "command": "workbench.action.nextEditor",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+left",
+    "command": "workbench.action.previousEditor",
+    "when": "editorTextFocus"
+  }
+]
+```
+
+- To open a file by typing it´s name, press _control_ + _r_.
+
+- To format current document, press _shift_ + _option_ + _f_.
+
 # Random links
 
 * [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
