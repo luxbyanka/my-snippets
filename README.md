@@ -149,7 +149,7 @@ Type 'keyboard' and choose **Preferences: Open Keyboard Shortcuts (JSON)**.
 
 - To open a new Finder window, press _command_ + _n_. Works only if you are in Finder.
 
-- To open a new Finder window, press _command_ + _shift_ + [_spacer bar_]. Works only if you are in Finder.
+- To open a new Finder window, press _option_ + _command_ + [_spacer bar_].
 
 - To view system/invisible files or directories, press _shift_ + _command_ + _._.
 
