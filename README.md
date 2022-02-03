@@ -119,6 +119,17 @@ git config user.name "Celeste Arantes"
 ./ffmpeg -i tenet.mkv -map 0:s:1 subs-es.srt #Extract subs on track 2
 ```
 
+### macOS Terminal
+
+```bash
+# Get files names only of files that differ:
+diff -rq "~/new-git/github/carantes/gjallarhorn-old/" "~/new-git/github/carantes/gjallarhorn/"|grep "^Files.*differ$"|sed 's/^Files \(.*\) and .* differ$/\1/'
+# Get files only present in A:
+diff -rq "~/new-git/github/carantes/gjallarhorn-old/" "~/new-git/github/carantes/gjallarhorn/"|grep "^Only in ~/new-git/github/carantes/gjallarhorn/.*"
+# Get files only present in B:
+diff -rq "~/new-git/github/carantes/gjallarhorn-old/" "~/new-git/github/carantes/gjallarhorn/"|grep "^Only in ~/new-git/github/carantes/gjallarhorn-old/.*"
+```
+
 # Visual Studio Code
 
 On **macOS**, press _shift_ + _command_ + _p_ to open the **Command Palette**.
@@ -145,6 +156,8 @@ Type 'keyboard' and choose **Preferences: Open Keyboard Shortcuts (JSON)**.
 
 - To format current document, press _shift_ + _option_ + _f_.
 
+- To replace, press _command_ + _g_.
+
 # macOS
 
 - To open a new Finder window, press _command_ + _n_. Works only if you are in Finder.
@@ -156,6 +169,8 @@ Type 'keyboard' and choose **Preferences: Open Keyboard Shortcuts (JSON)**.
 - To go to a specific directory, press _shift_ + _command_ + _g_.
 
 - To switch desktop/space, press _control_ + [_right arrow_].
+
+- To hide window, press _command_ + _h_.
 
 # Random links
 
