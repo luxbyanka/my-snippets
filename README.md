@@ -145,6 +145,16 @@ Type 'keyboard' and choose **Preferences: Open Keyboard Shortcuts (JSON)**.
 
 - To format current document, press _shift_ + _option_ + _f_.
 
+# macOS
+
+- To open a new Finder window, press _command_ + _n_. Works only if you are in Finder.
+
+- To view system/invisible files or directories, press _shift_ + _command_ + _._.
+
+- To go to a specific directory, press _shift_ + _command_ + _g_.
+
+- To switch desktop/space, press _control_ + [_right arrow_].
+
 # Random links
 
 * [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
